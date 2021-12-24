@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/channel_wallpaper"
+        tools:context=".gen2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/aqua"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_aqua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/iv_aqua" />
+
+        <ImageView
+            android:id="@+id/iv_aqua"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/aqua" />
+
+        <TextView
+            android:id="@+id/tv_aqua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湊阿庫婭"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/aqua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_aqua"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shion"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_shion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_shion" />
+
+        <ImageView
+            android:id="@+id/iv_shion"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_aqua"
+            app:srcCompat="@drawable/shion" />
+
+        <TextView
+            android:id="@+id/tv_shion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紫咲詩音"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/shion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_shion"
+            app:layout_constraintTop_toBottomOf="@+id/aqua" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ayame"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_ayame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_ayame" />
+
+        <ImageView
+            android:id="@+id/iv_ayame"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_shion"
+            app:srcCompat="@drawable/ayame" />
+
+        <TextView
+            android:id="@+id/tv_ayame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百鬼綾目"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/ayame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_ayame"
+            app:layout_constraintTop_toBottomOf="@+id/shion" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/choco"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_choco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_choco" />
+
+        <ImageView
+            android:id="@+id/iv_choco"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_ayame"
+            app:srcCompat="@drawable/choco" />
+
+        <TextView
+            android:id="@+id/tv_choco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="癒月巧可"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/choco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_choco"
+            app:layout_constraintTop_toBottomOf="@+id/ayame" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/subaru"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            tools:layout_editor_absoluteY="864dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_subaru"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_subaru" />
+
+        <ImageView
+            android:id="@+id/iv_subaru"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_choco"
+            app:srcCompat="@drawable/subaru" />
+
+        <TextView
+            android:id="@+id/tv_subaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大空昴"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/subaru"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_subaru"
+            app:layout_constraintTop_toBottomOf="@+id/choco" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

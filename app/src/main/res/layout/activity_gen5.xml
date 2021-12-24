@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/channel_wallpaper"
+        tools:context=".gen5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lamy"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_lamy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/iv_lamy" />
+
+        <ImageView
+            android:id="@+id/iv_lamy"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lamy" />
+
+        <TextView
+            android:id="@+id/tv_lamy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雪花菈米"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/lamy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_lamy"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nene"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_nene"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_nene" />
+
+        <ImageView
+            android:id="@+id/iv_nene"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_lamy"
+            app:srcCompat="@drawable/nene" />
+
+        <TextView
+            android:id="@+id/tv_nene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桃鈴音音"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/nene"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_nene"
+            app:layout_constraintTop_toBottomOf="@+id/lamy" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botan"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_botan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_botan"
+            />
+
+        <ImageView
+            android:id="@+id/iv_botan"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/botan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_nene"
+            />
+
+        <TextView
+            android:id="@+id/tv_botan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獅白牡丹"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/botan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_botan"
+            app:layout_constraintTop_toBottomOf="@+id/nene"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/polka"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_polka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_polka"
+            />
+
+        <ImageView
+            android:id="@+id/iv_polka"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/polka"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_botan"
+            />
+
+        <TextView
+            android:id="@+id/tv_polka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尾丸波爾卡"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/polka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_polka"
+            app:layout_constraintTop_toBottomOf="@+id/botan"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

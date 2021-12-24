@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/channel_wallpaper"
+        tools:context=".gen3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pekora"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_pekora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/iv_pekora" />
+
+        <ImageView
+            android:id="@+id/iv_pekora"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pekora" />
+
+        <TextView
+            android:id="@+id/tv_pekora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兔田佩克拉"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/pekora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_pekora"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rushia"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_rushia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_rushia" />
+
+        <ImageView
+            android:id="@+id/iv_rushia"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pekora"
+            app:srcCompat="@drawable/rushia" />
+
+        <TextView
+            android:id="@+id/tv_rushia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="潤羽露西婭"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/rushia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_rushia"
+            app:layout_constraintTop_toBottomOf="@+id/pekora" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/flare"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_flare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_flare" />
+
+        <ImageView
+            android:id="@+id/iv_flare"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_rushia"
+            app:srcCompat="@drawable/flare" />
+
+        <TextView
+            android:id="@+id/tv_flare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不知火芙蕾雅"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/flare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/iv_flare"
+            app:layout_constraintTop_toBottomOf="@+id/rushia" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/noel"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_noel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_noel" />
+
+        <ImageView
+            android:id="@+id/iv_noel"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_flare"
+            app:srcCompat="@drawable/noel" />
+
+        <TextView
+            android:id="@+id/tv_noel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白銀諾艾爾"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/noel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_noel"
+            app:layout_constraintTop_toBottomOf="@+id/flare" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/marine"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_marine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_marine" />
+
+        <ImageView
+            android:id="@+id/iv_marine"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_noel"
+            app:srcCompat="@drawable/marine" />
+
+        <TextView
+            android:id="@+id/tv_marine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="寶鍾瑪琳"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/marine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_marine"
+            app:layout_constraintTop_toBottomOf="@+id/noel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

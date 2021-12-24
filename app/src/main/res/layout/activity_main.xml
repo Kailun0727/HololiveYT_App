@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen0"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/select_button"
+        android:onClick="select_gen"
+        android:text="零期生"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/gen3"
+        app:layout_constraintEnd_toStartOf="@+id/gen3"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen1"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/select_button"
+        android:text="一期生"
+        android:textColor="@color/black"
+        android:onClick="select_gen"
+        app:layout_constraintEnd_toEndOf="@+id/gen0"
+        app:layout_constraintTop_toBottomOf="@+id/gen0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen2"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/select_button"
+        android:text="二期生"
+        android:textColor="@color/black"
+        android:onClick="select_gen"
+        app:layout_constraintEnd_toEndOf="@+id/gen1"
+        app:layout_constraintTop_toBottomOf="@+id/gen1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gamers"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/select_button"
+        android:text="Gamers"
+        android:textColor="@color/black"
+        android:onClick="select_gen"
+        app:layout_constraintEnd_toEndOf="@+id/gen2"
+        app:layout_constraintTop_toBottomOf="@+id/gen2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen3"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/select_button"
+        android:onClick="select_gen"
+        android:text="三期生"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen4"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/select_button"
+        android:text="四期生"
+        android:textColor="@color/black"
+        android:onClick="select_gen"
+        app:layout_constraintEnd_toEndOf="@+id/gen3"
+        app:layout_constraintTop_toBottomOf="@+id/gen3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen5"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/select_button"
+        android:text="五期生"
+        android:textColor="@color/black"
+        android:onClick="select_gen"
+        app:layout_constraintEnd_toEndOf="@+id/gen4"
+        app:layout_constraintTop_toBottomOf="@+id/gen4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gen6"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/select_button"
+        android:text="六期生"
+        android:textColor="@color/black"
+        android:onClick="select_gen"
+        app:layout_constraintEnd_toEndOf="@+id/gen5"
+        app:layout_constraintTop_toBottomOf="@+id/gen5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/schedule"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:background="@drawable/select_button"
+        android:onClick="select_gen"
+        android:text="排程表"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gen6"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toEndOf="@+id/gamers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

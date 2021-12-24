@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/channel_wallpaper"
+        tools:context=".en_gen2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sana"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_sana"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/iv_sana" />
+
+        <ImageView
+            android:id="@+id/iv_sana"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sana" />
+
+        <TextView
+            android:id="@+id/tv_sana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tsukumo Sana"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/sana"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_sana"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fauna"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_fauna"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_fauna" />
+
+        <ImageView
+            android:id="@+id/iv_fauna"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_sana"
+            app:srcCompat="@drawable/fauna" />
+
+        <TextView
+            android:id="@+id/tv_fauna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ceres Fauna"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/fauna"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_fauna"
+            app:layout_constraintTop_toBottomOf="@+id/sana" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kronii"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_kronii"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@+id/iv_kronii" />
+
+        <ImageView
+            android:id="@+id/iv_kronii"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_fauna"
+            app:srcCompat="@drawable/kronii" />
+
+        <TextView
+            android:id="@+id/tv_kronii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ouro Kronii"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/kronii"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_kronii"
+            app:layout_constraintTop_toBottomOf="@+id/fauna" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mumei"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_mumei"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_mumei" />
+
+        <ImageView
+            android:id="@+id/iv_mumei"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_kronii"
+            app:srcCompat="@drawable/mumei" />
+
+        <TextView
+            android:id="@+id/tv_mumei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nanashi Mumei"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mumei"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_mumei"
+            app:layout_constraintTop_toBottomOf="@+id/kronii" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bae"
+            android:layout_width="300px"
+            android:layout_height="130px"
+            android:background="@drawable/red_button"
+            android:onClick="goChannel"
+            android:text="前往頻道"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_bae"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_bae" />
+
+        <ImageView
+            android:id="@+id/iv_bae"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_mumei"
+            app:srcCompat="@drawable/bae" />
+
+        <TextView
+            android:id="@+id/tv_bae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hakos Baelz"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_bae"
+            app:layout_constraintTop_toBottomOf="@+id/mumei" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/id_wallpaper"
+
+    tools:context=".hololive_id">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/schedule"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/select_button"
+        android:onClick="select_gen"
+        android:text="排程表"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/id_gen2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/id_gen1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_gen1"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/select_button"
+        android:onClick="select_gen"
+        android:text="一期生"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_gen2"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:background="@drawable/select_button"
+        android:onClick="select_gen"
+        android:text="二期生"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toEndOf="@+id/id_gen1"
+        app:layout_constraintTop_toTopOf="@+id/id_gen1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

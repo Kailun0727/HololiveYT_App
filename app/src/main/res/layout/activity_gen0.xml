@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/channel_wallpaper"
+    tools:context=".gen0">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tokino_sora"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:background="@drawable/red_button"
+        android:onClick="goChannel"
+        android:text="前往頻道"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_tokino_sora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toEndOf="@+id/iv_tokino_sora" />
+
+    <ImageView
+        android:id="@+id/iv_tokino_sora"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tokino_sora" />
+
+    <TextView
+        android:id="@+id/tv_sora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="時乃空"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tokino_sora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_tokino_sora"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/roboco"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:background="@drawable/red_button"
+        android:onClick="goChannel"
+        android:text="前往頻道"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_roboco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_roboco" />
+
+    <ImageView
+        android:id="@+id/iv_roboco"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_tokino_sora"
+        app:srcCompat="@drawable/roboco" />
+
+    <TextView
+        android:id="@+id/tv_roboco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蘿蔔子"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/roboco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_roboco"
+        app:layout_constraintTop_toBottomOf="@+id/tokino_sora" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/miko"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:background="@drawable/red_button"
+        android:onClick="goChannel"
+        android:text="前往頻道"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_miko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/iv_miko" />
+
+    <ImageView
+        android:id="@+id/iv_miko"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_roboco"
+        app:srcCompat="@drawable/miko" />
+
+    <TextView
+        android:id="@+id/tv_miko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="櫻巫女"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/miko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_miko"
+        app:layout_constraintTop_toBottomOf="@+id/roboco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/suisei"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:background="@drawable/red_button"
+        android:onClick="goChannel"
+        android:text="前往頻道"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_suisei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_suisei" />
+
+    <ImageView
+        android:id="@+id/iv_suisei"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_miko"
+        app:srcCompat="@drawable/suisei" />
+
+    <TextView
+        android:id="@+id/tv_suisei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星街彗星"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_suisei"
+        app:layout_constraintTop_toBottomOf="@+id/miko" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
